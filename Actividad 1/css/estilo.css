@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+:root{
+    background: linear-gradient(180deg, #cc99ff    100%, #9999ff 100%);
+    --color-primary: #cc99ff;
+    --color-secondary:#9999ff;
+    --button-padding: 20px 40px;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align:center;
+}
+
+p {
+    text-align: right;
+    color: #353652;
+}
+
+.fa-apple{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+h3 {
+    color: #a64dff
+}
+
+h1 {
+    color: #353652;
+}
+
+h2 {
+    color:white;
+    font-weight: 400;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: #353652;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color:	#fdb7ca73;
+    overflow: hidden;
+    padding: 50px 0;
+    gap: 2rem;
+    max-width: 1200px;
+   border-radius: 5px;
+   align-content: center;
+   text-align: center;
+}
+
+.container p {
+    font-size:2vw; 
+}
+
+.container__mac {
+    width: 90%;
+    margin: 0 auto;
+    background-color:	#9999ff73;
+    overflow: hidden;
+    padding: 50px 0;
+    gap: 2rem;
+    max-width: 1200px;
+   border-radius: 5px;
+   align-content: center;
+   text-align: center;
+}
+
+.container__mac h1{
+    font-size:4vw; 
+}
+
+
+
+.container__ipad {
+    width: 90%;
+    margin: 0 auto;
+    background-color:	#9999ff73;
+    overflow: hidden;
+    padding: 50px 0;
+    gap: 2rem;
+    max-width: 1200px;
+   border-radius: 5px;
+   align-content: center;
+   text-align: center;
+}
+
+.container__ipad h1{
+    font-size:5vw; 
+}
+
+
+.main__items--cta {
+    margin: 0 auto;    
+   display: block;
+}
+
+img {  
+    max-width: 100%;  
+    height:fit-content;  
+    }  
+
+.shell{
+    height: 100vh;
+    background-image: url('../assets/appleCover.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.mac{
+    height: 100vh;
+    background-image: url('../assets/imac_colors.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.ipad{
+    height: 100vh;
+    background-image: url('../assets/compare_ipad.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.iphone{
+    height: 100vh;
+    background-image: url('../assets/iPhone_Cover2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.shell .container {
+    padding: 0;
+    text-align: center;
+}
+
+.shell__container {
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    color: white;
+    
+}
+
+.shell__texts{
+    width: 80%;
+    flex-basis: calc(45% - 1rem);
+    color: #353652;
+    text-orientation: sideways;
+}
+
+.shell__title{
+    font-size: 3.2rem;
+    flex-basis: calc(50% - 1rem);
+}
+
+.shell__wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+nav {
+    float:left;
+    overflow: hidden;
+    display:contents;
+    text-align: center;
+    height: 70px;
+    align-items: center;
+    font-weight: 600;
+    gap: 2rem;
+    padding: 14px 16 px;
+}
+
+
+.nav__items{
+    color:white;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+    list-style-type: none;
+}
+
+
+
+  footer{
+    list-style: none;
+    padding: 0;
+    font-weight: 100;
+    pointer-events: auto;
+    letter-spacing: normal;
+    box-sizing: content-box;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+  }
+
+
+
+ul{
+    list-style-type: none;
+    list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    text-align: left;
+}
+
+.footer__grid{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.nav__items{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    
+    .nav{
+        float: none;
+        width: 100%;
+        
+    }
+    .footer__grid{
+        float: none;
+        width: 100%;
+        text-align: right;
+    }
+
+    .shell__container{
+        float: none;
+        width: 100%;
+    }
+
+    
+}
+
+
+
+
+/*Modificar .directory-column-section-item*/
+@media (min-width: 1000px) {
+    .footer__grid {
+        display: grid;
+        grid-template-areas: "auto auto auto auto";
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-auto-flow: row;
+        column-gap: 2rem;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .newArticles__grid {
+        display: grid;
+        grid-template-areas: "auto auto"
+        "auto auto"
+        "auto auto"
+        "auto auto";
+        column-gap: 2rem;
+        row-gap: 2rem;
+        width: fit-content;
+    }
+    .fitness {
+        grid-column: 1 / span 2;
+    }
+    .MacMini{
+        grid-column: 1 / span 2;
+    }
+    .iPhone13Pro{
+        grid-column: 1 / span 2;
+    }
+
+    
+   
+    
+   
+}
